@@ -1,0 +1,249 @@
+
+<div class="main-my-post">
+    <p class="my-result-heading">My Topics</p>
+    
+    
+    <!-- Result Statistics -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Topics Statistics</p>
+    
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line "></p>
+                </div>
+            </div>
+    
+        </div>
+
+        <!--cards-->
+<div class="card-grid-div">
+    <!-- First Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="../assets/forum/image 143.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="../assets/Financial/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">2</p>
+            <p class="card-bottom">Published Topics</p>
+        </div>
+    </mat-card>
+    <!-- Second Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="../assets/forum/image 144.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="../assets/Financial/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">0</p>
+            <p class="card-bottom">Closed Topics</p>
+        </div>
+    </mat-card>
+    <!-- Third Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="../assets/forum/image 145.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="../assets/Financial/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">7</p>
+            <p class="card-bottom">Topic Posts</p>
+        </div>
+    </mat-card>
+</div>
+<!--end cards-->
+    
+    
+ <!-- Result Statistics -->
+ <div class="result-statistics-div">
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p>Filter Topics</p>
+
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line "></p>
+            </div>
+        </div>
+
+    </div>
+
+        <div class="form-div">
+    
+            <div class="form-row">
+    
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">From </mat-label><br />
+    
+                    <div class="calendar-input-field">
+    
+                        <mat-form-field appearance="outline" class="form-field">
+    
+                            <img src="../../assets/Quizzes/Group 340247.png" alt="" class="calendar-img">
+    
+                            <input matInput class="input">
+    
+                        </mat-form-field>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">To</mat-label><br />
+    
+                    <div class="calendar-input-field">
+    
+                        <mat-form-field appearance="outline" class="form-field">
+    
+                            <img src="../../assets/Quizzes/Group 340247.png" alt="" class="calendar-img">
+    
+                            <input matInput class="input">
+    
+                        </mat-form-field>
+    
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+    
+            <div class="form-row">
+    
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">Forum</mat-label><br />
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in"  [(value)]="selected">
+                                <mat-option  class="btnn" value="All">All</mat-option>
+                                <mat-option  class="btnn"  value="green">Green</mat-option>
+                                <mat-option  class="btnn" value="blue">Blue</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+    
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">Status</mat-label><br />
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" [(value)]="selected">
+                                <mat-option class="btnn" value="All">All</mat-option>
+                                <mat-option class="btnn" value="green">Green</mat-option>
+                                <mat-option class="btnn" value="blue">Blue</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+    
+    
+            </div>
+    
+            <!-- <div class="form-row"> -->
+    
+    
+                <div class="in-form-row button-div">
+                    <button mat-raised-button class="show-result-button">Show Results</button>
+                </div>
+    
+    
+            <!-- </div> -->
+    
+        </div>
+    
+    <!-- Result Statistics -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>My certificates</p>
+    
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line "></p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="quizzer-table-div">
+    
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    
+                <!--- Note that these columns can be defined in any order.
+                      The actual rendered columns are set as a property on the row definition" -->
+    
+                <!-- Instructor Column -->
+                <ng-container matColumnDef="instructor">
+                    <th mat-header-cell *matHeaderCellDef>Title </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="td-div">
+                            <img [src]="element.instructor.img" alt="">
+                            <div class="td-text-div">
+                                <p class="td-text-p1"> {{element.instructor.text}}</p>
+    
+                                <p class="td-text-p2"> {{element.instructor.Text}}</p>
+                            </div>
+                        </div>
+                    </td>
+                </ng-container>
+    
+                <!-- Quiz Column -->
+                <ng-container matColumnDef="quiz">
+                    <th mat-header-cell *matHeaderCellDef> Forum </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="td-text-div">
+                            <p class="td-text-p1"> {{element.quiz.text}}</p>
+    
+                            <!-- <p class="td-text-p2"> {{element.quiz.Text}}</p> -->
+                        </div>
+                    </td>
+                </ng-container>
+    
+                <!-- Quiz Grade Column -->
+                <ng-container matColumnDef="quizGrade">
+                    <th mat-header-cell *matHeaderCellDef> Replies</th>
+                    <td mat-cell *matCellDef="let element" class="reg-12"> {{element.quizGrade}} </td>
+                </ng-container>
+    
+              
+                <!-- Date Column -->
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef>Date Published </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="quizzer-date-td">
+                            <span> {{element.date}}</span>
+                            
+                        </div>
+    
+                    </td>
+                </ng-container>
+    
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+    
+        </div>
+    
+    
+    
+    </div>
+    
+    
+    </div>
+    </div>
+    </div>

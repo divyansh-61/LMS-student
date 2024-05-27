@@ -1,0 +1,377 @@
+*,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.my-result-heading {
+    font-size: 30px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--primary-color);
+    text-wrap: nowrap;
+    width: 8%;
+    padding-bottom: 20px;
+
+}
+
+.page-container-div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.result-statistics-div {
+    padding: 50px 20px;
+    /* border-top: 1px solid var(--primary-color); */
+    position: relative;
+}
+
+.result-statistics {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--white);
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    width: 100%;
+    /* justify-content: center; */
+    gap: 10px;
+    text-wrap: nowrap;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+
+    ::ng-deep .result-statistics-div {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        position: relative;
+    }
+
+    .result-statistics {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+}
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.result-statistics p {
+    margin: 0;
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-arrow-icon {
+    color: var(--primary-color);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+
+}
+
+.card-grid-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+}
+
+@media (max-width: 900px) {
+    .card-grid-div {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .card-grid-div {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+.card-grid-div mat-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    border-radius: 10px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-down {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-medium {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card-bottom {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey-sec);
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 30px 20px;
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    border-radius: 10px;
+}
+
+.form-input-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.calendar-input-field {
+    display: flex;
+    height: fit-content !important;
+    width: 100% !important;
+}
+
+.in-form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100% !important;
+}
+
+.form-field {
+    width: 100% !important;
+    height: fit-content;
+    border: var(--grey);
+}
+
+.form-row {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+
+.button-div {
+    padding: 20px 0 !important;
+    width: 100%;
+}
+
+.show-result-button {
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: none;
+    max-width: 34%;
+    min-width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 30px 0px;
+}
+
+.text-with-toggle-div {
+    display: flex;
+    gap: 8px;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grlight);
+}
+
+@media (max-width: 500px) {
+    .text-with-toggle-div {
+        margin-bottom: 10px;
+    }
+}
+
+table {
+    width: 100%;
+    text-wrap: nowrap;
+    overflow-y: auto;
+}
+
+.quizzer-table-div {
+    overflow-x: auto;
+    border-radius: 10px !important;
+    text-wrap: nowrap;
+    table-layout: auto;
+}
+
+td {
+    background-color: var(--lightgr);
+    margin: 8px 0px !important;
+}
+
+.td-div {
+    display: flex;
+    gap: 5px;
+    padding: 15px 5px;
+}
+
+.td-text-p1 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.td-text-p2 {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--grey-sec);
+}
+
+.quizzer-text-green {
+    color: var(--lightgreen);
+}
+
+.quizzer-text-orange {
+    color: var(--accent-color);
+}
+
+.quizzer-text-red {
+    color: var(--red);
+}
+
+.quizzer-date-td {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.reg-12 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.dot-dropdown-div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+}
+
+.dot-dropdown-div:hover .quizzer-dot-dropdown {
+    display: block;
+}
+
+.quizzer-dot-icon {}
+
+.quizzer-dot-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: -10px;
+    left: -114px;
+    background-color: var(--lightwhite);
+    cursor: default;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 0px var(--textcol);
+}
+
+.dot-dropdown-list-item {
+    padding: 3px 20px;
+    color: var(--grey-sec);
+}
+
+.dot-dropdown-list-item:hover {
+    color: var(--primary-color);
+}
+
+.mdc-list {
+    padding: 0;
+}
+
+.tr-for-distance {
+    margin: 16px 0px !important;
+}
+
+@media (max-width: 700px) {
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .show-result-button {
+        max-width: 100%;
+    }
+}
+
+.mat-mdc-header-row {
+    background: none !important;
+    color: var(--white) !important;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  ::ng-deep thead, .mat-mdc-header-row .mdc-data-table__header-row .cdk-header-row {
+    background-image: linear-gradient(to right, var(--blue), var(--primary-color)) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-wrap: nowrap;
+  }
+  .mat-mdc-header-row th{
+    color: white !important;
+    padding: 10px;
+      }
+      ::ng-deep .calendar-input-field .mat-mdc-form-field-infix {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 10px;
+        padding: 0 !important;
+        width: 100% !important;
+      }
+      ::ng-deep  .calendar-input-field .mdc-text-field {
+        padding: 0 !important;
+      }
+      ::ng-deep  .calendar-input-field {
+        width: 100% !important;
+      }
+      ::ng-deep  .mat-mdc-text-field-wrapper {
+        width: 100% !important;
+      }
+      ::ng-deep  .form-field {
+        width: 100% !important;
+      }
+      .mat-card, .mdc-card {
+        background-color: var(--white) !important;
+      }

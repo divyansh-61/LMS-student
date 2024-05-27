@@ -1,0 +1,186 @@
+
+.result-statistics-div {
+    padding:40px 0px;
+    margin-top: 20px ;
+    /* border-top: 1px solid var(--primary-color); */
+    position: relative;
+  }
+  
+  .result-statistics {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--white);
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+ 
+    width: 100%;
+    /* justify-content: center; */
+    gap: 10px;
+    text-wrap: nowrap;
+ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 500px) {
+  
+    ::ng-deep .result-statistics-div{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        position: relative;
+    }
+  
+    .result-statistics {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        position: absolute;
+       
+    }
+  }
+  
+  .my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    margin: 0px 19px;
+    font-weight: 700;
+   
+  
+  }
+  .mark-btn{
+    background-color: var(--primary-color);
+    border:none;
+    padding: 10px;
+   font-size: 20px;
+    border-radius: 4px;
+    color:var(--white);
+  }
+ 
+  .result-statistics p {
+    margin: 0;
+  }
+  
+  .quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+  }
+  
+  .quizzers-arrow-icon {
+    color: var(--primary-color);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+  }
+  
+  .quizzers-pink-line {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+  
+  
+  }
+
+
+/* card css start */
+.img-course {
+    width: 30%;
+    height: 32%;
+}
+.outer-instructor{
+    margin-top: 20px;
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+    
+}
+
+.inner-instructor {
+    
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+    align-items: center;
+   
+}
+
+.heading-content-instructor {
+    color: black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+}
+.content-instructor {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900px;
+    font-family: Poppins;
+    color:var( --grey-sec);
+}
+@media screen and (max-width:500px) {
+  .outer-instructor{
+      margin-top: 45px;
+     
+  }
+  .img-course {
+      width: 100%;
+      height: 32%;
+  }
+}
+/* card css end */
+
+/* btn class */
+
+.btn-class {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  box-shadow: 4px 4px 4px 4px #F5F5F5;
+}
+
+.btnsss-1 {
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  margin: 10px;
+  padding: 20px 40px 20px 40px;
+}
+
+.btnsss-2 {
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  padding: 20px 40px 20px 40px;
+
+}
+
+.btnsss-3 {
+  background-color: var(--red) !important;
+  color: var(--white) !important;
+  margin: 10px;
+  padding: 20px 20px 20px 20px;
+}
+
+@media screen and (min-width: 370px) {
+  .btnsss-3 {
+      background-color: var(--red) !important;
+      color: var(--white) !important;
+      margin: 10px;
+      padding: 20px 40px 20px 40px;
+  }
+
+}
+
+.btnsss-4 {
+  background-color: var(--lightgreen) !important;
+  color: var(--white) !important;
+  padding: 20px 40px 20px 40px;
+}

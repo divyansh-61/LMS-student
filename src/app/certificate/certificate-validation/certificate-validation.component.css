@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+@media (min-width: 1000px) {
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-div {
+    width: 50% !important;
+    height: 100% !important;
+  }
+
+  .form-div {
+    width: 50%;
+  }
+
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: left !important;
+}
+
+form input {
+  width: 100% !important;
+  border-radius: 5px;
+  outline: none;
+  padding: 6px;
+  border-color: var(--grey) !important;
+  margin: 0%;
+
+}
+
+.form-div {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  padding: 2vmax;
+  gap: 5vmax;
+}
+
+.form mat-form-field {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.image-div {
+  width: 100%;
+  height: 50%;
+  /* background-image: url("../../assets/Certificate Validation/Group 341415.png");
+    background-size: cover; */
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  --mdc-filled-text-field-container-color: white !important;
+}
+
+
+.captcha-row {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bgcol {
+  background-color: var(--grey);
+  /* width: fit-content; */
+  border-radius: 40%;
+  padding: 3px;
+  width: 5%;
+  margin: 18px auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.email_text_label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.login_text {
+  line-height: 40px;
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0px;
+  /* text-align: center; */
+}
+
+.mfbtn {
+  display: flex;
+  justify-content: center;
+}
+
+.bgpink {
+  background-color: var(--primary-color);
+}
+
+.bggrey {
+  background-color: var(--grey) !important;
+}
+
+.mt2 {
+  width: 100% !important;
+}
+
+.recover_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 10px;
+}
+
+.w_div {
+  width: 40%;
+}
+
+.w_div1 {
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .recover_div {
+    display: block;
+  }
+
+  .w_div {
+    width: 100%;
+  }
+
+  .w_div1 {
+    width: 100%;
+  }
+}
+
+
+.captcha {
+  display: flex !important;
+  flex-direction: row;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.captcha input {
+  outline: none;
+  border: none;
+  font-size: medium;
+  padding: 2px 15px;
+}
+
+.refresh-icon {
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  padding: 2px;
+  background-color: var(--whitligt);
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 20px;
+  padding: 6px 40px;
+  border: 0;
+  font-weight: 600;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+
+.mat-mdc-header-row {
+  background: none !important;
+  color: var(--white) !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+::ng-deep thead,
+.mat-mdc-header-row .mdc-data-table__header-row .cdk-header-row {
+  background-image: linear-gradient(to right, var(--blue), var(--primary-color)) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  text-wrap: nowrap;
+}
+
+.mat-mdc-header-row th {
+  color: white !important;
+}
+
+::ng-deep .calendar-input-field .mat-mdc-form-field-infix {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 10px;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+::ng-deep .calendar-input-field .mdc-text-field {
+  padding: 0 !important;
+}
+
+::ng-deep .calendar-input-field {
+  width: 100% !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+  width: 100% !important;
+}
+
+::ng-deep .form-field {
+  width: 100% !important;
+}
+
+.mat-card,
+.mdc-card {
+  background-color: var(--white) !important;
+}
+
+.img-height{
+  object-fit: cover;
+}

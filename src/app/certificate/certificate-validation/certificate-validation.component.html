@@ -1,0 +1,48 @@
+<div class="main">
+
+    <div class="image-div">
+        <img src="assets/Certificates/Group 341415.png" alt="" class="image">
+    </div>
+
+    <div class="form-div">
+        <p class="login_text">
+            CERTIFICATE VALIDATION
+        </p>
+
+
+        <div [hidden]="selectedButton == 'email'">
+            <div class="recover_div">
+
+                <div class="">
+                    <mat-label class="email_text_label">Certificate ID:</mat-label><br />
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class=" mt2">
+                            <input matInput type="tel" id="phone" class="mt2" />
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div [hidden]="selectedButton == 'phone'">
+                    <mat-label class="email_text_label">Captcha</mat-label><br />
+                    <div class="mt2 captcha-row">
+                        <div appearance="outline" class="mt2 captcha">
+                            <input matInput type="" placeholder="" class="mt2" />
+                            <img src="../../assets/Certificates/Rectangle 4774.png" alt="" class="img-height">
+                        </div>
+
+                        <!-- <mat-icon class="mat-18 refresh-icon">refresh</mat-icon> -->
+
+                    </div>
+                </div>
+
+                <div>
+                    <button mat-button class="button bgpink">Validate</button>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

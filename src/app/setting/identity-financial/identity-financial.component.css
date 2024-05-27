@@ -1,0 +1,251 @@
+.main-div {
+    margin: 15px;
+}
+
+/* ------------------------------------heading css-------------------- */
+.identity-main{
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+    padding: 10px ;
+    margin-top: 10px;
+}
+.heading-tag {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hr-line {
+    width: 80px;
+    border: 1px solid var(--primary-color);
+}
+
+.arrow-line-div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* ------------------------------------heading css-------------------- */
+
+/* ------------------------------------arrow-------------------- */
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.aroowline {
+    font-size: 10px;
+    color: var(--lighpink);
+}
+
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+/* ------------------------------------arrow-------------------- */
+.text-red {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--red);
+}
+
+.in-form-row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 70% ;
+}
+
+.form-input-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.identity-2-field {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+margin-top: 10px;
+gap:10px;
+}
+
+::ng-deep .mat-mdc-select-value {
+    width: 88% !important;
+
+}
+
+::ng-deep .mdc-notched-outline {
+    width: 90% !important;
+
+}
+.Biography-input-div-2 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80% !important;
+}
+.Biography-input-div-2 input{
+    width: 80% !important;
+}
+
+.identity-2-file-field {
+    display: flex;
+    margin-top: 10px;
+    gap:10px;
+}
+
+.input-head-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-and-button-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.in-form-row-file {
+    width: 35%;
+    border: 2px solid var(--grey);
+    position: relative;
+}
+
+.linkfile {
+    background-color: var(--blue) !important;
+    font-size: 23px;
+    color: var(--white);
+    width: 25px;
+    height: 25px;
+    padding: 10px 14px 10px 18px;
+}
+
+.in-form-row-file-2 {
+    background-color: var(--white) !important;
+    width: 90%;
+    border: 2px solid var(--grey);
+    border-radius: 5px;
+}
+
+.identity-field {
+    width: 100%;
+
+}
+
+::ng-deep .mat-typography p {
+    margin: 0 0 2px !important;
+}
+
+.Biography-input-div {
+    display: flex;
+    flex-direction: column;
+    width: 80% ;
+}
+.Biography-input-div input{
+    width: 80% ;
+}
+
+.Biography-form-input {
+    font-size: 16px;
+    font-weight: 500;
+
+}
+@media screen and (max-width:500px) {
+    .identity-2-field{
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    .identity-2-file-field{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Biography-input-div-2{
+        width:100% !important;
+    }
+    .Biography-input-div{
+        width: 100% !important;
+    }
+    .in-form-row {
+      
+        width: 100% !important;
+    }
+    
+}
+
+
+
+/* btn class */
+
+.btn-class {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+  }
+  
+  .btnsss-1 {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    margin: 10px;
+    padding: 20px 40px 20px 40px;
+  }
+  
+  .btnsss-2 {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    padding: 20px 40px 20px 40px;
+  
+  }
+  
+  .btnsss-3 {
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    margin: 10px;
+    padding: 20px 20px 20px 20px;
+  }
+  
+  @media screen and (min-width: 370px) {
+    .btnsss-3 {
+        background-color: var(--red) !important;
+        color: var(--white) !important;
+        margin: 10px;
+        padding: 20px 40px 20px 40px;
+    }
+  
+  }
+  
+  .btnsss-4 {
+    background-color: var(--lightgreen) !important;
+    color: var(--white) !important;
+    padding: 20px 40px 20px 40px;
+  }
+  .upload-input-div {
+    display: flex;
+    margin: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color:#EEEEEE !important;
+    border: 1px solid var(--grey);
+}
+.upload-image-div {
+    background-color: var(--blue);
+    min-width: fit-content;
+    padding: 12px 15px;
+}
+.upload-input-div label{
+    margin: 0px;
+}

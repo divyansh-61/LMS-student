@@ -1,0 +1,92 @@
+<!-- new page div -->
+<div class="main-div">
+    <div>
+        <p class="heading-tag">New support</p>
+        <p class="hr-line"></p>
+    </div>
+    <!-- sub hedaing  -->
+    <div class="sub-heading-div">
+        <p class="sub-heading">New support message</p>
+        <div class="arrow-line-div">
+            <i class="aroowline  fa-solid fa-caret-right"></i>
+            <p class="arrow-line"></p>
+        </div>
+    </div>
+    <!-- sub hedaing close -->
+
+    <!-- input card  -->
+
+    <mat-card class="input-card-parent">
+        <mat-card-content>
+            <div class="main-container-div">
+                <!-- main input div -->
+                <div class="input-cards">
+
+                    <div class="card-container">
+                        <mat-label class="label-text">Subject </mat-label><br />
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="w100 py3">
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="card-container-2">
+                        <mat-label class="label-text">Type </mat-label><br />
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="w100 py3">
+                                <mat-select class="select_in">
+                                    <mat-option value="red">Red</mat-option>
+                                    <mat-option value="green">Green</mat-option>
+                                    <mat-option value="blue">Blue</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <!-- main input div close -->
+
+                <!-- texarea div -->
+                <div class="card-container">
+                    <mat-label class="label-text">Message </mat-label><br />
+                    <div class="message-container">
+                        <mat-form-field appearance="outline" class="w100 py3">
+                            <input matInput class="select_in-new">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <!-- texarea div close -->
+
+
+
+
+                <!-- input and button div  -->
+                <div>
+                    <p class="input-head-text">Attach a file</p>
+                    <div class="btn-input">
+                        <!-- <div class="identity-field"> -->
+                        <!-- <div class=""> -->
+                        <div class="upload-input-div">
+                            <label for="accessibility" class="upload-image-div">
+                                <img src="assets/support/attach_file_add.png" alt="">
+                            </label>
+                            <input hidden type="file" class="input" id="accessibility">
+                        </div>
+                        <!-- </div> -->
+
+                        <div class="">
+                            <button mat-raised-button class="search-batn">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- input and button div close -->
+            </div>
+
+
+        </mat-card-content>
+    </mat-card>
+
+    <!-- input card close -->
+
+</div>
+<!-- new page div close -->

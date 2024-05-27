@@ -1,0 +1,132 @@
+.upperpart{
+    padding: 20px;
+}
+.parapart{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   line-height: 30px;
+}
+.parapart p{
+   font-size: 20px;
+}
+.doyoupart span{
+   color: grey;
+}
+.buttondiv{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   padding-block: 15px;
+}
+
+.buttondiv button{
+    background-color: var(--red) !important;  
+    color: white !important;
+    padding: 10px 20px !important;
+    border: none;
+}
+
+
+.confirmdelete .buttondiv .mat-mdc-raised-button:nth-child(1){
+   background-color: var(--red) !important;
+   color: white !important;
+   width: 20% !important;
+}
+.upperpart{
+   background-color: rgba(255, 145, 169, 0.2);
+   padding-block: 20px;
+}
+.parapart{
+       padding-block: 10px;
+}
+.buttondiv{
+   background-color: rgba(187, 187, 187, 0.2);
+
+}
+/* popup border radius notes ngdeep used */
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface{
+   border-radius: 20px !important;
+}
+/* popup responsive media queries */
+@media (min-width:320px) and (max-width:900px) {
+  ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface{
+       width: inherit !important
+   }
+   .parapart p{
+       text-align: center;
+       padding-inline: 30px;
+   }
+
+}
+.upperpart .spandiv{
+    text-align: center !important;
+}
+.upperpart .spandiv span{
+    font-weight: 600 !important;
+    font-size: 20px !important;
+}
+.detaildiv_one{
+    display: flex;
+    flex-direction: column;
+}
+.doyoupart{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+}
+.detaildiv_two{
+    display: flex;
+    flex-direction: column;
+}
+.textdiv{
+    text-align: center;
+    color: grey;
+}
+.textbox_new{
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 8px;
+}
+.paddingdiv{
+    padding-inline: 25px;
+    padding-bottom: 20px;
+}
+@media (min-width: 320px) and (max-width: 520px){
+    .doyoupart{
+  all: unset;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+    }
+    .parapart{
+        line-height: 20px;
+    }
+    .space{
+        gap: 10px;
+    }
+
+}
+/* Paragraph */
+.textbox_new .textdiv p:nth-child(1){
+    transform:translatex(0px) translatey(0px);
+   }
+   
+   /* Paragraph */
+   .textbox_new .textdiv p{
+    margin-bottom:5px;
+    font-size: 16px;
+   }
+   .space{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .space p{
+    font-weight: bold;
+   }

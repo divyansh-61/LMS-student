@@ -1,0 +1,49 @@
+
+.main-course{
+    padding:20px;
+}
+.heading-course{
+    font-size: 30px;
+    font-weight: 900;
+   
+}
+.border-list {
+    border: 1px solid var(--primary-color);
+    width: 10%;
+}
+
+.outer-instructor{
+    margin: 20px;
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+    
+}
+.inner-instructor {
+    
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+    align-items: center;
+   
+}
+
+.heading-content-instructor {
+    color: black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+}
+.content-instructor {
+    font-size: 16px;
+    font-weight: 900px;
+    font-family: Poppins;
+    text-align: center;
+    color:var( --grey-sec);
+}
+@media screen and  (max-width:410px) {
+    .img-course{
+        width:100%;
+    }
+}
+

@@ -1,0 +1,523 @@
+<div class="main-course-org">
+    <p class="my-result-heading">Organization Courses</p>
+
+
+    <!-- Result Statistics -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Filter courses</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line "></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="form-div">
+
+        <div class="form-row">
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">From </mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <img src="../../assets/Quizzes/Group 340247.png" alt="" class="calendar-img">
+
+                        <input matInput class="input">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">To</mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <img src="../../assets/Quizzes/Group 340247.png" alt="" class="calendar-img">
+
+                        <input matInput class="input">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="form-row">
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label"> Course type </mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in">
+                            <mat-option value="red">Red</mat-option>
+                            <mat-option value="green">Green</mat-option>
+                            <mat-option value="blue">Blue</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Sort by </mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in">
+                            <mat-option value="red">Red</mat-option>
+                            <mat-option value="green">Green</mat-option>
+                            <mat-option value="blue">Blue</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- <div class="form-row"> -->
+
+
+        <div class="in-form-row button-div">
+            <button mat-raised-button class="show-result-button">Show Results</button>
+        </div>
+
+
+        <!-- </div> -->
+
+    </div>
+
+
+
+
+    <!-- My quizzes -->
+    <div class="result-statistics-div-1">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Organisation Courses</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+            <div class="text-with-toggle-div">
+                <p>Only free courses</p>
+                <mat-slide-toggle routerLink="/course/togle-free"></mat-slide-toggle>
+            </div>
+
+        </div>
+
+
+
+        <!-- cources card -->
+        <div class="cards-course">
+
+
+            <!-- mat card 1 -->
+            <mat-card>
+                <mat-card-content class="courses-mat-card-div">
+                    <div class="img-div">
+                        <div class="absolut_2-course">course</div>
+                        <img src="assets/course-org/Rectangle 4569 (4).png" class="card-img" alt="Rectangle 4569.png">
+
+                    </div>
+                    <div class="cource-mat-card-content">
+                        <div class="hedaing-and-button-and-icon">
+                            <div class="hedaing-and-button">
+                                <p class="card-heading" routerLink="/course/name">Travel Management Course</p>
+                                <div>
+                                    <button mat-button class="card-button">Course</button>
+                                    <button mat-button class="card-button-gift">Private</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="star-number-div">
+                            <div class="stars-parent-div">
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                            </div>
+
+                            <p class="reg-20">5.00</p>
+                        </div>
+
+                        <p class="dolar-purchase">Free</p>
+                        <!-- detail div -->
+                        <div class="details-divs">
+                            <div>
+                                <p class="detail-heading">Item ID: </p>
+                                <p class="detail-heading-2">5</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Category: </p>
+                                <p class="detail-heading-2">Design </p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Duration: </p>
+                                <p class="detail-heading-2"> 1:00 Hrs</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Files: </p>
+                                <p class="detail-heading-2"> 4</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Downloadable: </p>
+                                <p class="detail-heading-2"> yes</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Sales:</p>
+                                <p class="detail-heading-2"> 1 (0)</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Instructor:</p>
+                                <p class="detail-heading-2"> Robert Ransdell</p>
+                            </div>
+
+                        </div>
+                        <!-- detail div close -->
+                    </div>
+
+                </mat-card-content>
+            </mat-card>
+
+            <!-- mat card 2 -->
+            <mat-card>
+                <mat-card-content class="courses-mat-card-div">
+                    <div class="img-div">
+                        <div class="absolut_2-course">Finished</div>
+                        <img src="assets/course-org/Rectangle 4569 (5).png" class="card-img" alt="Rectangle 4569.png">
+
+                    </div>
+                    <div class="cource-mat-card-content">
+                        <div class="hedaing-and-button-and-icon">
+                            <div class="hedaing-and-button">
+                                <p class="card-heading">How to Travel Around the World</p>
+                                <button mat-button class="card-button">Live Class</button>
+                                <!-- <button mat-button class="card-button">Course</button> -->
+                            </div>
+
+                        </div>
+
+                        <div class="star-number-div">
+                            <div class="stars-parent-div">
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                            </div>
+
+                            <p class="reg-20">5.00</p>
+                        </div>
+
+                        <p class="dolar-purchase">$60</p>
+                        <!-- detail div -->
+                        <div class="details-divs">
+                            <div>
+                                <p class="detail-heading">Item ID: </p>
+                                <p class="detail-heading-2">5</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Category: </p>
+                                <p class="detail-heading-2">Design </p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Duration: </p>
+                                <p class="detail-heading-2"> 1:00 Hrs</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Downloadable: </p>
+                                <p class="detail-heading-2"> yes</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Sales:</p>
+                                <p class="detail-heading-2"> 1 (0)</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Instructor:</p>
+                                <p class="detail-heading-2"> Robert Ransdell</p>
+                            </div>
+
+                        </div>
+                        <!-- detail div close -->
+                    </div>
+                </mat-card-content>
+            </mat-card>
+
+
+            <!-- mat card 3 -->
+            <mat-card>
+                <mat-card-content class="courses-mat-card-div">
+                    <div class="img-div">
+                        <div class="absolut_2-course">Finished</div>
+                        <img src="assets/course-org/Rectangle 4569 (6).png" class="card-img" alt="Rectangle 4569.png">
+
+                    </div>
+                    <div class="cource-mat-card-content">
+                        <div class="hedaing-and-button-and-icon">
+                            <div class="hedaing-and-button">
+                                <p class="card-heading">Effective Time Management</p>
+                                <button mat-button class="card-button">Live Class</button>
+                                <!-- <button mat-button class="card-button">Course</button> -->
+                            </div>
+
+                        </div>
+
+                        <div class="star-number-div">
+                            <div class="stars-parent-div">
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                                <div class="star-div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="em" height="em"
+                                        viewBox="0 0 128 128">
+                                        <path fill="#fdd835"
+                                            d="m68.05 7.23l13.46 30.7a7.047 7.047 0 0 0 5.82 4.19l32.79 2.94c3.71.54 5.19 5.09 2.5 7.71l-24.7 20.75c-2 1.68-2.91 4.32-2.36 6.87l7.18 33.61c.63 3.69-3.24 6.51-6.56 4.76L67.56 102a7.033 7.033 0 0 0-7.12 0l-28.62 16.75c-3.31 1.74-7.19-1.07-6.56-4.76l7.18-33.61c.54-2.55-.36-5.19-2.36-6.87L5.37 52.78c-2.68-2.61-1.2-7.17 2.5-7.71l32.79-2.94a7.047 7.047 0 0 0 5.82-4.19l13.46-30.7c1.67-3.36 6.45-3.36 8.11-.01" />
+                                        <path fill="#ffff8d"
+                                            d="m67.07 39.77l-2.28-22.62c-.09-1.26-.35-3.42 1.67-3.42c1.6 0 2.47 3.33 2.47 3.33l6.84 18.16c2.58 6.91 1.52 9.28-.97 10.68c-2.86 1.6-7.08.35-7.73-6.13" />
+                                        <path fill="#f4b400"
+                                            d="M95.28 71.51L114.9 56.2c.97-.81 2.72-2.1 1.32-3.57c-1.11-1.16-4.11.51-4.11.51l-17.17 6.71c-5.12 1.77-8.52 4.39-8.82 7.69c-.39 4.4 3.56 7.79 9.16 3.97" />
+                                    </svg>
+                                </div>
+
+
+                            </div>
+
+                            <p class="reg-20">5.00</p>
+                        </div>
+
+                        <p class="dolar-purchase">Free</p>
+                        <!-- detail div -->
+                        <div class="details-divs">
+                            <div>
+                                <p class="detail-heading">Item ID: </p>
+                                <p class="detail-heading-2">5</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Category: </p>
+                                <p class="detail-heading-2">Design </p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Duration: </p>
+                                <p class="detail-heading-2"> 1:00 Hrs</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Downloadable: </p>
+                                <p class="detail-heading-2"> yes</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Sales:</p>
+                                <p class="detail-heading-2"> 1 (0)</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Instructor:</p>
+                                <p class="detail-heading-2"> Robert Ransdell</p>
+                            </div>
+
+                        </div>
+                        <!-- detail div close -->
+                    </div>
+                </mat-card-content>
+            </mat-card>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- cources card close -->

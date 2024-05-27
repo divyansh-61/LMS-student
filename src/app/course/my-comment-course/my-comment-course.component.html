@@ -1,0 +1,186 @@
+<div class="page-container-div">
+
+    <p class="my-result-heading">My Comments</p>
+
+
+    
+
+
+    <!-- Filter comments -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Filter comments</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="form-div">
+
+            <div class="form-row">
+
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">From </mat-label><br />
+
+                    <div class="calendar-input-field">
+
+                        <mat-form-field appearance="outline" class="form-field">
+
+                            <img src="../../assets/Quizzes/Group 340247.png" alt="" class="calendar-img">
+
+                            <input matInput class="input">
+
+                        </mat-form-field>
+
+                    </div>
+
+                </div>
+
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">To</mat-label><br />
+
+                    <div class="calendar-input-field">
+
+                        <mat-form-field appearance="outline" class="form-field">
+
+                            <img src="../../assets/Quizzes/Group 340247.png" alt="" class="calendar-img">
+
+                            <input matInput class="input">
+
+                        </mat-form-field>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+ 
+            <div class="form-row form-row-2">
+
+                  <div class="in-form-row">
+                    <mat-label class="form-input-label">Course </mat-label><br />
+
+                    <div class="calendar-input-field">
+
+                        <mat-form-field appearance="outline" class="form-field">
+
+                      <input matInput class="input">
+
+                        </mat-form-field>
+
+                    </div>
+
+                </div>
+                <div class="in-form-row button-div">
+                    <button mat-raised-button class="show-result-button">Show Results</button>
+                </div>
+            </div> 
+
+          
+
+        </div>
+
+    </div>
+
+
+    <!-- My quizzes -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>My comments</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="quizzer-table-div">
+
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                <!--- Note that these columns can be defined in any order.
+                      The actual rendered columns are set as a property on the row definition" -->
+
+               
+
+                <!-- Quiz Column -->
+                <ng-container matColumnDef="quiz">
+                    <th mat-header-cell *matHeaderCellDef> Course</th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="td-text-div">
+                            <p class="td-text-p1"> {{element.quiz.text}}</p>
+                        </div>
+                    </td>
+                </ng-container>
+
+                <!-- Quiz Grade Column -->
+                <ng-container matColumnDef="quizGrade">
+                    <th mat-header-cell *matHeaderCellDef>Comment </th>
+                    <td mat-cell *matCellDef="let element" class="reg-12 ">
+                        <button class="view-btn" (click)="viewComment()"> {{element.quizGrade}}</button>
+                         </td>
+                </ng-container>
+
+              
+
+                <!-- Status Column -->
+                <ng-container matColumnDef="status">
+                    <th mat-header-cell *matHeaderCellDef> Status </th>
+                    <td mat-cell *matCellDef="let element"
+                        [ngClass]="element.status.text == 'Published' ? 'quizzer-text-green' : element.status.text == 'Waiting' ? 'quizzer-text-orange' : 'quizzer-text-red' ">
+                        <p>{{element.status.text}} </p>
+                        <p class="td-text-p2">{{element.status.Text}} </p>
+                    </td>
+                </ng-container>
+
+                <!-- Date Column -->
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef> Date </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="quizzer-date-td">
+                            <span> {{element.date}}</span>
+                            <button mat-button [matMenuTriggerFor]="menu">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 20 20">
+                                    <!-- three dot icon start -->
+                                    <g fill="currentColor">
+                                      <circle cx="10" cy="15" r="2" />
+                                      <circle cx="10" cy="10" r="2" />
+                                      <circle cx="10" cy="5" r="2" />
+                                    </g>
+                                    <!-- three dot icon end -->
+                                  </svg></button>
+                                  <div class="mat-gap">
+                                  <mat-menu #menu="matMenu" >
+                                    <button mat-menu-item class="btnn"  (click)="editpopup()">Edit</button>
+                                    <button mat-menu-item class="btnn" (click)="deletepopup()">Delete</button>
+                                   
+                                  </mat-menu>
+                                </div>
+                        </div>
+
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+

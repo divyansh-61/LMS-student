@@ -1,0 +1,187 @@
+<div class="page-container-div">
+
+    <p class="my-result-heading">Completion Certificates</p>
+
+
+    <!-- Filter Results -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Filter Certificates</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="form-div">
+
+            <div class="form-row">
+
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">From </mat-label>
+
+                    <div class="calendar-input-field">
+
+                        <mat-form-field appearance="outline" class="form-field">
+
+                            <img src="assets/Certificates/Group 340247.png" alt="" class="calendar-img">
+
+                            <input matInput class="input">
+
+                        </mat-form-field>
+
+                    </div>
+
+                </div>
+
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">To </mat-label>
+
+                    <div class="calendar-input-field">
+
+                        <mat-form-field appearance="outline" class="form-field">
+
+                            <img src="assets/Certificates/Group 340247.png" alt="" class="calendar-img">
+
+                            <input matInput class="input">
+
+                        </mat-form-field>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="in-form-row course-input">
+                    <mat-label class="form-input-label"> Course </mat-label>
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="input">
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="in-form-row button-div">
+                    <button mat-raised-button class="show-result-button">Show Results</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- My certificates -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>My certificates</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="quizzer-table-div">
+
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                <!--- Note that these columns can be defined in any order.
+                      The actual rendered columns are set as a property on the row definition" -->
+
+                <!-- Course Column -->
+                <ng-container matColumnDef="course">
+                    <th mat-header-cell *matHeaderCellDef> Course </th>
+                    <div class="td-div-distance">
+                        <td mat-cell *matCellDef="let element">
+                            <div class="td-div">
+                                <!-- <img [src]="element.course.img" alt=""> -->
+                                <div class="td-text-div">
+                                    <p class="td-text-p1"> {{element.course.text}}</p>
+                                </div>
+                            </div>
+                        </td>
+                    </div>
+                </ng-container>
+
+                <!-- Certificate ID Column -->
+                <ng-container matColumnDef="certificateId">
+                    <th mat-header-cell *matHeaderCellDef> Certificate ID </th>
+                    <div class="td-div-distance">
+
+                        <td mat-cell *matCellDef="let element">
+                            <div class="td-text-div">
+                                <p class="td-text-p1"> {{element.certificateId}}</p>
+                            </div>
+                        </td>
+
+                    </div>
+                </ng-container>
+
+                <!-- Date Column -->
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef> Date </th>
+                    <div class="td-div-distance">
+                        <td mat-cell *matCellDef="let element">
+                            <div class="quizzer-date-td">
+                                <span> {{element.date}}</span>
+
+                                <div class="dot-dropdown-div">
+
+                                    <div class="quizzer-dot-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em"
+                                            viewBox="0 0 20 20">
+                                            <g fill="currentColor">
+                                                <circle cx="10" cy="15" r="2" />
+                                                <circle cx="10" cy="10" r="2" />
+                                                <circle cx="10" cy="5" r="2" />
+                                            </g>
+                                        </svg>
+                                    </div>
+
+                                    <!-- <div class="quizzer-dot-dropdown">
+                                        <mat-list>
+
+
+                                            <div class="dot-dropdown-list-item reg-12">View Answer</div>
+
+                                            <mat-divider></mat-divider>
+
+
+                                            <div class="dot-dropdown-list-item reg-12">Courses Page</div>
+
+                                        </mat-list>
+
+                                    </div> -->
+
+                                </div>
+                            </div>
+
+                        </td>
+                    </div>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="tr-for-distance"></tr>
+            </table>
+
+        </div>
+
+    </div>
+
+
+</div>

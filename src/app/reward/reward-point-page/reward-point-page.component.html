@@ -1,0 +1,251 @@
+<div class="main-rewards">
+
+
+<div class="charge">
+    <span>Rewards Points</span>
+</div>
+<div class="result-statistics-div">
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p>Points & Rewards Statistics</p>
+
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--cards-->
+    <div class="card-grid-div">
+        <!-- First Card -->
+        <mat-card>
+            <div class="card-top">
+                <div>
+                    <img src="assets/reward/image 143.png" alt="" class="img_first">
+                </div>
+                <div>
+                    <img src="assets/Financial/stoke.png" alt="" class="img_second">
+                </div>
+            </div>
+            <div class="card-down">
+                <p class="card-medium">5828</p>
+                <p class="card-bottom">Remained Points</p>
+            </div>
+        </mat-card>
+        <!-- Second Card -->
+        <mat-card>
+            <div class="card-top">
+                <div>
+                    <img src="assets/reward/image 144.png" alt="" class="img_first">
+                </div>
+                <div>
+                    <img src="assets/Financial/stoke.png" alt="" class="img_second">
+                </div>
+            </div>
+            <div class="card-down">
+                <p class="card-medium">5828</p>
+                <p class="card-bottom">Total Points</p>
+            </div>
+        </mat-card>
+        <!-- Third Card -->
+        <mat-card>
+            <div class="card-top">
+                <div>
+                    <img src="assets/reward/image 145.png" alt="" class="img_first">
+                </div>
+                <div>
+                    <img src="assets/Financial/stoke.png" alt="" class="img_second">
+                </div>
+            </div>
+            <div class="card-down">
+                <p class="card-medium">0</p>
+                <p class="card-bottom">Bonus Date</p>
+            </div>
+        </mat-card>
+    </div>
+    <!--end cards-->
+
+</div>
+
+
+<!-- mat cards start -->
+
+<div class="cards-2-reward">
+    <mat-card class="img-content-reward">
+        <!-- <div> -->
+        <div>
+            <img src="assets/reward/Rectangle 4839.png" alt="" class="img_first">
+        </div>
+
+        <div class="content-reward">
+            <p class="content-reward1">Convert your points or get free courses</p>
+            <p class="content-reward2">You can convert your earned points to the wallet charge or get free courses by
+                spending points. You can get</p>
+            <p class="content-reward3">$1.18</p>
+            <p class="content-reward2">For your available points</p>
+            <div class="btn-2-parent">
+                <button mat-raised-button class="btn-convert" (click)="convertpoint()">Convert Points</button>
+                <button mat-button class="btn-browser">Browse Courses</button>
+            </div>
+        </div>
+        <!-- </div> -->
+    </mat-card>
+    <mat-card class="img-content-reward-div">
+
+        <div class="img-content-reward1">
+            <div class="img-reward-content">
+            <img src="assets/reward/Rectangle 4621 (4).png" alt="" >
+        </div>
+            <div>
+                <p class="want-to">Want to get more points?</p>
+                <p>Learn how our point rewarding system works and get more points.</p>
+            </div>
+            <div class="viewmore-btn">
+            <button mat-button >View more</button>
+            </div>
+        </div>
+        <!-- right card -->
+        <div class="img-content-reward2">
+            <div class="innerchile-left-flex">
+                <p class="leader">Leaderboard</p>
+                <img src="assets/reward/Rectangle 4621.png" alt="" class="img_first">
+                <p class="leader">Cameron Schofield </p>
+                <p class="int-points1">5828 Points</p>
+            </div>
+            <div class="innerchile-right-flex">
+                <!-- card1 -->
+                <div class="innerchild-flex">
+                    
+                    <img src="assets/reward/Rectangle 4621 (1).png" alt="" class="img_first">
+                    <div>
+                        <p class="name">Jade Harrison</p>
+                        <p class="int-points">4169 Points</p>
+                    </div>
+                </div>
+                 <!-- card2 -->
+                 <div class="innerchild-flex">
+                    
+                    <img src="assets/reward/Rectangle 4621 (2).png" alt="" class="img_first">
+                    <div>
+                        <p class="name">Cactuscat Clothing</p>
+                        <p class="int-points">1116 Points</p>
+                    </div>
+                </div>
+                 <!-- card3 -->
+                 <div class="innerchild-flex">
+                    
+                    <img src="assets/reward/Rectangle 4621 (3).png" alt="" class="img_first">
+                    <div>
+                        <p class="name">Morgan Sullivan</p>
+                        <p class="int-points">991 Points</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </mat-card>
+</div>
+
+
+<!-- table -->
+
+<!-- sub hedaing  -->
+<div class="result-statistics-div">
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p>Points & Rewards Statistics</p>
+
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- sub hedaing close -->
+
+    <div class="table-slider">
+    <!-- table start -->
+   
+    <div class="quizzer-table-div">
+
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+
+
+            <!--Description Column -->
+            <ng-container matColumnDef="Description">
+                <th mat-header-cell *matHeaderCellDef> Title</th>
+                <td mat-cell *matCellDef="let element" class="reg-12"> {{element.Description}} </td>
+            </ng-container>
+
+            <!--Amount Column -->
+            <ng-container matColumnDef="Amount">
+                <th mat-header-cell *matHeaderCellDef>Points </th>
+
+                <td mat-cell *matCellDef="let element" class="reg-12">
+                    <div>
+                        {{element.Amount}}
+                    </div>
+                </td>
+
+            </ng-container>
+
+            <!-- creator Column -->
+            <ng-container matColumnDef="creator">
+                <th mat-header-cell *matHeaderCellDef>Type </th>
+                <td mat-cell *matCellDef="let element" class="reg-12 type">
+
+                    <p>{{element.creator.text}} </p>
+                    <!-- <p class="td-text-p2">{{element.creator.Text}} </p> -->
+                </td>
+            </ng-container>
+
+            <!-- Date Column -->
+            <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef>Payment Date </th>
+                <td mat-cell *matCellDef="let element" class="reg-12">
+                    <div class="quizzer-date-td">
+                        <span> {{element.date}}</span>
+
+                    </div>
+
+                </td>
+            </ng-container>
+
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+    </div>
+
+    <!-- slider button -->
+    <div class="button-slider">
+        <div class="btn-div">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" bt-icon" width="2em" height="2em" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m14 7l-5 5m0 0l5 5" />
+            </svg>
+            <button class="btn-slider">1</button>
+            <button class="btn-slider">2</button>
+            <button class="btn-slider">3</button>
+            <svg xmlns="http://www.w3.org/2000/svg" class=" bt-icon" width="2em" height="2em" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m10 17l5-5m0 0l-5-5" />
+            </svg>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+</div>

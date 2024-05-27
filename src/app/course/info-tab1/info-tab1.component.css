@@ -1,0 +1,205 @@
+.type_text {
+  color: var(--blue);
+  position: relative;
+  margin: 20px 0;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.colb {
+  font-size: 20px;
+  color: var(--black);
+}
+.time_text {
+  font-size: 20px;
+}
+.type_text::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 25%;
+  /* width: 100%; */
+  height: 2px;
+  background-color: var(--blue);
+}
+.text_info {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px;
+  margin-top: 12px;
+}
+.grid_div {
+  display: grid;
+}
+.star_div {
+  color: var(--yellow);
+  margin-right: 5px;
+}
+.ormt1 {
+  margin-top: 0px;
+  min-width: 35%;
+  /* max-width: 50%; */
+}
+.excel_para {
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 22px;
+  /* padding: 10px; */
+}
+.notgrid {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+}
+.list_1 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.center-hed {
+  font-size: 16px;
+}
+.h_lin {
+  line-height: 1.6;
+}
+.absolut_3 {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  font-size: 20px;
+  background-color: var(--lightgreen);
+  padding: 6px 18px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: var(--white);
+}
+.numb2 {
+  width: fit-content;
+  background-color: var(--green);
+  color: var(--white);
+  padding: 2px 12px;
+  border-radius: 5px;
+  text-align: left !important;
+  /* margin-top: 20px !important; */
+}
+.iner_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black);
+  position: relative;
+  /* gap: 50px; */
+}
+.mt_0 {
+  margin-top: 0px;
+}
+.card_he {
+  margin: 40px 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+}
+.w_100_div {
+  width: 100%;
+}
+.FAQ_text {
+  color: var(--blue);
+  position: relative;
+  margin: 20px 0;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.FAQ_text::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 8%;
+  /* width: 100%; */
+  height: 2px;
+  background-color: var(--blue);
+}
+.accord_text {
+  font-size: 24px ;
+  font-weight: 500 ;
+}
+.inne_lorem {
+  font-size: 16px;
+}
+.my_margin {
+  margin: 20px 0px !important;
+  padding: 20px 0px !important;
+}
+.post_btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+.flex_repl_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ma_div {
+  margin: 20px;
+}
+.mai_card_res {
+  padding: 20px;
+  margin: 20px 0px;
+}
+.rot_text {
+  font-weight: 500;
+  color: var(--black);
+  margin: 0px;
+  font-size: 20px;
+}
+.dat_tim_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+.stud_text {
+  font-size: 12px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 1204px) {
+  .notgrid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .time_text {
+    font-size: 13px;
+  }
+  .accord_text{
+    font-size: 15px;
+  }
+  .text_info{
+    font-size: 18px;
+  }
+  .type_text{
+    font-size: 24px;
+  }
+  .FAQ_text{
+    font-size: 24px;
+  }
+  .numb2 {
+    font-size: 15px;
+  }
+  .mai_card_res {
+    padding: 5px;
+  }
+  .ma_div {
+    margin: 5px;
+  }
+  .dat_tim_text {
+    margin-top: 6px;
+  }
+  .flex_repl_div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

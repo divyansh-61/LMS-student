@@ -1,0 +1,183 @@
+<div class="main_page" *ngIf="!isShowNewPlan">
+    <!--heading section start-->
+    <div class="Dashboard-header">
+        <span></span>
+        <div class="offline">
+            Activate offline status
+            <mat-slide-toggle [(ngModel)]="isChecked" (change)="onToggleChange()">
+            </mat-slide-toggle>
+        </div>
+    </div>
+    <div class=" Dashboard-header">
+        <p class="heading_dash">Dashboard</p>
+    </div>
+    <!--heading section end-->
+    <!-- Hi Robert Ransdell, -->
+    <div class="Ransdell-main">
+        <div>
+            <p class="hi_text">Hi Cameron Schofield,</p>
+            <p class="ha_text">You have 57 new events</p>
+            <button class="view_btn" mat-raised-button>View all events</button>
+        </div>
+        <div class="Ransdell-image">
+            <img src="assets/dashboard/Ransdell-image.svg" alt="">
+        </div>
+
+    </div>
+    <!-- Hi Robert Ransdell, section  -->
+    <!-- Card Section IN Grid start  -->
+    <div class="cards-main">
+        <div class="full-height">
+            <mat-card class="example-card">
+                <mat-card-header class="blnc-img">
+                    <img src={{AccountBalanceimg}} alt="">
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="accou_text">Account Balance</p>
+                    <p class="ru_text">$297.90</p>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions>
+                    <div class="accou_text">Withdrawable:</div>
+                    <button mat-button class="ha_text">{{Withdrawable}}</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+        <div class="flex-container">
+            <div class="cards-row">
+                <mat-card class="rightsodediv">
+                    <div>
+                        <img src="assets/dashboard/Pendingmeetings.png" alt="">
+                    </div>
+                    <div>
+                        <p class="ten_text">10</p>
+                        <p class="accou_text"> Pending meetings</p>
+                    </div>
+                </mat-card>
+                <mat-card class="rightsodediv">
+                    <div>
+                        <img src="assets/dashboard/SupportMessages.png" alt="">
+                    </div>
+                    <div>
+                        <p class="ten_text">10</p>
+                        <p class="accou_text">Purchased Courses</p>
+
+
+                    </div>
+                </mat-card>
+            </div>
+            <div class="cards-row">
+                <mat-card class="rightsodediv">
+                    <div>
+                        <img src="assets/dashboard/MonthlySales.png" alt="">
+                    </div>
+                    <div>
+                        <p class="ten_text">10</p>
+                        <p class="accou_text"> Monthly Sales</p>
+
+                    </div>
+                </mat-card>
+                <mat-card class="rightsodediv">
+                    <div>
+                        <img src="assets/dashboard/Comments.png" alt="">
+                    </div>
+                    <div>
+                        <p class="ten_text">10</p>
+                        <p class="accou_text">Comments</p>
+
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Section IN Grid End  -->
+
+
+    <div>
+
+
+        <!-- charg account end -->
+        <!-- chat ghraph start -->
+        <div class="ghra_section">
+            <!-- ghraph start -->
+
+            <div class="main_ghraph_cart" style="display: block">
+                <div class="top_text">
+                    <p class="mont_text">Monthly Sales</p>
+                    <button class="more_btn" mat-stroked-button>Dec 2023</button>
+                </div>
+                <canvas class="canvas" baseChart [datasets]="barChartData" [labels]="barChartLabels"
+                    [options]="barChartOptions" [legend]="barChartLegend" (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)"></canvas>
+            </div>
+            <!-- ghrph end -->
+            <!-- progres pai start -->
+
+            <div class="main_ghraph_cart">
+                <canvasjs-chart [options]="chartOptions3" class="w-full"></canvasjs-chart>
+            </div>
+
+
+            <!-- progres bar end -->
+        </div>
+        <!-- -------------------------------------------  -->
+
+        <!-- -------------------------------------------  -->
+
+
+        <!-- chat ghraph end -->
+        <!-- last section start -->
+        <div class="main_last">
+            <p class="not_text">Noticeboard</p>
+            <div class="new_div">
+                <div>
+                    <p class="new_text">New Private Course Published</p>
+                    <p class="cret_text">Created by Light Moon | 13 Jul 2021 | 23:58</p>
+                </div>
+                <button class="more_btn" mat-stroked-button>More info</button>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="new_div">
+                <div>
+                    <p class="new_text">New Class Published</p>
+                    <p class="cret_text">Created by Light Moon | 13 Jul 2021 | 04:30</p>
+                </div>
+                <button class="more_btn" mat-stroked-button>More info</button>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="new_div">
+                <div>
+                    <p class="new_text">New Year Sales Festival</p>
+                    <p class="cret_text">Created by Staff | 12 Jul 2021 | 19:26</p>
+                </div>
+                <button class="more_btn" mat-stroked-button> More info</button>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="new_div">
+                <div>
+                    <p class="new_text">Instructor terms of services changed</p>
+                    <p class="cret_text">Created by Staff | 10 Jul 2021 | 08:57</p>
+                </div>
+                <button class="more_btn" mat-stroked-button>More info</button>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="new_div">
+                <div>
+                    <p class="new_text">Top summer classes</p>
+                    <p class="cret_text"></p>
+                </div>
+                <button class="more_btn" mat-stroked-button>More info</button>
+            </div>
+            <mat-divider></mat-divider>
+        </div>
+        <!-- last section end -->
+    </div>
+
+</div>
+
+
+<ng-container *ngIf="isShowNewPlan">
+    <app-activateofflinestatus></app-activateofflinestatus>
+</ng-container>

@@ -1,0 +1,172 @@
+.main-subscribe{
+  padding: 2px 6px;
+}
+
+.charge span{
+    color:#000;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'poppins';
+    border-bottom: 2px solid var( --primary-color)!important;
+    padding-bottom: 10px;
+  
+}
+.charge{
+    margin-top: 10px ;
+    margin-bottom: 40px ;
+    margin-left: 10px;
+}
+
+.arrow-line-div{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* card css start */
+.img-course {
+    width: 30%;
+    height: 32%;
+}
+.outer-instructor{
+    margin: 20px;
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+    
+}
+
+.inner-instructor {
+    
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+    align-items: center;
+   
+}
+
+.heading-content-instructor {
+    color: black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+}
+.content-instructor {
+    font-size: 16px;
+    font-weight: 900px;
+    font-family: Poppins;
+    color:var( --grey-sec);
+    text-align: center;
+}
+/* card css end */
+
+
+
+/*sub heading style start*/
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+   
+    margin:40px 10px 10px 10px;
+}
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+    font-weight: 600;
+}
+.fa-solid {
+    font-size: 18px;
+    color: var(--lighpink);
+}
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+/*sub heading style end*/
+
+
+/* 3 cards css start */
+.relat_div {
+    position: relative;
+    padding: 25px !important;
+  }
+  
+  .btn_upr_div {
+    display: flex;
+    justify-content:end;
+  }
+  
+  .btn_bro {
+    background-color: var(--brown);
+    color: var(--darkbro);
+    font-size: 35px;
+    font-weight: 700;
+    padding: 8px 38px;
+    height: 60px;
+  }
+  .bronze button{
+    color: var(  --darkbro);
+  }
+  .gold button{
+    color: var(  --darkorange);
+    background-color: var( --lighyelow);
+  }
+  .silver button{
+    background-color:var(  --silver);
+    color:var(--bluesil);
+  }
+  .ab_div{
+    position: absolute;
+    top:-30px;
+    left:-20px;
+  }
+ 
+  .excel_para {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 20px;
+  }
+ 
+  .gren_text {
+    color: var(--lightgreen);
+    /* color: #00CF70; */
+    /* text-align: start; */
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .list_text {
+    color: var(--blue);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: start;
+    margin: 16px 0px;
+  }
+  .pur_btn button{
+    background-color: var(--primary-color);
+    color:var(--white);
+    font-size: 25px;
+  }
+  .card-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding:10px 40px;
+    /* margin-left: 10px; */
+    /* justify-content: center; */
+  }
+@media screen and (max-width:420px) {
+    .btn_bro {
+        background-color: var(--brown);
+        color: var(--darkbro);
+        font-size: 20px;
+        font-weight: 700;
+        padding: 8px 10px;
+        height: 60px;
+      }
+}
+  /*  */

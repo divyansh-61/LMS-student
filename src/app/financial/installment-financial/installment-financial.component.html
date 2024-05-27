@@ -1,0 +1,159 @@
+<div class="charge">
+    <span>Installments</span>
+</div>
+<!-- sub hedaing  -->
+<div class="sub-heading-div">
+    <p class="sub-heading">Installments Overview</p>
+    <div class="arrow-line-div">
+        <i class="fa-solid fa-caret-right"></i>
+        <p class="arrow-line"></p>
+    </div>
+</div>
+<!-- sub hedaing close -->
+<!--cards-->
+<div class="card-grid-div">
+    <!-- First Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="../assets/Financial/image 143.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="../assets/Financial/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">1</p>
+            <p class="card-bottom">Open Installments</p>
+        </div>
+    </mat-card>
+    <!-- Second Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="../assets/Financial/image 144.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="../assets/Financial/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">0</p>
+            <p class="card-bottom">Pending Verification</p>
+        </div>
+    </mat-card>
+    <!-- Third Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="../assets/Financial/image 145.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="../assets/Financial/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">0</p>
+            <p class="card-bottom">Finished Installments</p>
+        </div>
+    </mat-card>
+
+    <!-- fourt Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="../assets/Financial/image 146.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="../assets/Financial/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">1</p>
+            <p class="card-bottom">Overdue Installments</p>
+        </div>
+    </mat-card>
+</div>
+<!--end cards-->
+
+
+<!-- my installment  stART-->
+<div class="sub-heading-div">
+    <p class="sub-heading">My Installments</p>
+    <div class="arrow-line-div">
+        <i class="fa-solid fa-caret-right"></i>
+        <p class="arrow-line"></p>
+    </div>
+</div>
+
+<!-- mat card stART -->
+<!-- mat card 4 -->
+<mat-card>
+    <mat-card-content class="courses-mat-card-div">
+        <div class="img-div">
+            <img src="assets/course-org/Rectangle 4569 (2).png" alt="Rectangle 4569.png">
+
+        </div>
+        <div class="cource-mat-card-content">
+            <div class="hedaing-and-button-and-icon">
+                <div class="hedaing-and-button">
+                    <p class="card-heading">Installment and Secure Host</p>
+                    <button mat-button class="card-button">Overdue</button>
+                    <!-- <button mat-button class="card-button">Course</button> -->
+                </div>
+                <span> <button mat-button [matMenuTriggerFor]="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 20 20">
+                            <!-- three dot icon start -->
+                            <g fill="currentColor">
+                                <circle cx="10" cy="15" r="2" />
+                                <circle cx="10" cy="10" r="2" />
+                                <circle cx="10" cy="5" r="2" />
+                            </g>
+                            <!-- three dot icon end -->
+                        </svg></button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>Pay Upcoming Part</button>
+                        <button mat-menu-item routerLink="/financial/view-click">View Detials</button>
+                        <button mat-menu-item>Learning page</button>
+
+
+                    </mat-menu></span>
+            </div>
+
+            <!-- detail div -->
+            <div class="details-divs">
+                <div>
+                    <p class="detail-heading">Item ID: </p>
+                    <p class="detail-heading-2">1996</p>
+                </div>
+                <div>
+                    <p class="detail-heading">Purchase Date: </p>
+                    <p class="detail-heading-2">3 Jun 2023 05:03</p>
+                </div>
+                <div>
+                    <p class="detail-heading">Upfront</p>
+                    <p class="detail-heading-2"> $30</p>
+                </div>
+                <div>
+                    <p class="detail-heading">Total Installments: </p>
+                    <p class="detail-heading-2">3 Parts ($80)</p>
+                </div>
+                <div>
+                    <p class="detail-heading">Remained Installments: </p>
+                    <p class="detail-heading-2"> 3 Parts ($80)</p>
+                </div>
+                <div>
+                    <p class="detail-heading">Upcoming Installments:</p>
+                    <p class="detail-heading-2"> 1 Sep 2023 ($20)</p>
+                </div>
+                <div>
+                    <p class="detail-heading">Overdue Installments:</p>
+                    <p class="detail-heading-2">2 ($50)</p>
+                </div>
+            </div>
+            <!-- detail div close -->
+        </div>
+        <div class="absolut_2-course">Courses</div>
+    </mat-card-content>
+</mat-card>
+<!-- mat card end -->

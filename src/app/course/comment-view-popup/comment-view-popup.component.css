@@ -1,0 +1,82 @@
+.upperpart {
+   padding: 20px;
+}
+
+.parapart {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.parapart p {
+   font-weight: 400;
+   font-size: 16px;
+   color: var(--grey-sec);
+}
+
+.buttondiv {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   padding-block: 15px;
+}
+
+.spandiv {
+   display: flex;
+   justify-content: center;
+}
+
+.deletespan {
+   font-weight: 500;
+   font-size: 20px;
+}
+
+.confirmdelete .buttondiv .mat-mdc-raised-button:nth-child(1) {
+   background-color: var(--secondary-color) !important;
+   color: white !important;
+}
+
+.confirmdelete .buttondiv .mat-mdc-raised-button:nth-child(2) {
+   background-color: var(--red) !important;
+   color: white !important;
+   width: 20% !important;
+}
+
+.upperpart {
+   background-color: rgba(255, 145, 169, 0.2);
+   padding-block: 30px;
+}
+
+.parapart {
+   padding-block: 10px;
+   padding-bottom: 30px;
+}
+
+.buttondiv {
+   background-color: rgba(187, 187, 187, 0.2);
+
+}
+
+/* popup border radius notes ngdeep used */
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+   border-radius: 20px !important;
+}
+
+/* popup responsive media queries */
+@media (min-width:320px) and (max-width:900px) {
+   ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+      width: inherit !important
+   }
+
+   .parapart p {
+      text-align: center;
+      padding-inline: 30px;
+   }
+
+
+
+
+}

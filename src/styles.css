@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+
+::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ffffff; 
+    margin: 0 1rem;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #CDCDCD; 
+    border-radius: 5px;
+  }
+
+  
+  /* color start */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap'); */
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins" !important;
+
+  font-size: 22px;
+}
+
+
+.mat-drawer-container {
+  background-color: var(--white) !important;
+}
+
+
+
+/* ---------------ly---------------- */
+
+:root {
+  --primary-color: #ff3389;
+  --secondary-color: #2ecc71;
+  --accent-color: #e67e22;
+  --white: #fff;
+  --grey: #cccccc;
+  --grey-sec: #999999;
+  --blue: #2e108e;
+  --light_blue: #007cbc;
+  --black: #000;
+  --green: #007740;
+  --yellow: #ffd600;
+  --darkyellow: #eeba00;
+  --red: #ff3636;
+  --darkbl: #1b3d74;
+  --darkblck: #575757;
+  --lightgreen: #00cf70;
+  --brown: #ffb17b;
+  --darkbro: #ea6c1e;
+  --lighyelow: #ffeb97;
+  --silver: #f2f4ff;
+  --bluesil: #7f91ec;
+  --lightgr: #f8f8f8;
+  --lighblues: #8ad3ff;
+  --lighpink: #ffd6e7;
+  --lightgr: #f3f3f3;
+  --lightgree: #daffee;
+  --greylight: #efefef;
+  --grlight: #888888;
+  --lightpurpel: #d8cbff;
+  --purple: #7e50ff;
+  --whitligt: #f5f5f5;
+  --textcolor: #c5c5c5;
+  --liggre: #cbffde;
+  --mahrun: #d44343;
+  --lightmah: #ffcbcb;
+  --purpal: #cbd0ff;
+  --darkpurpl: #4363d4;
+  --textcol: #626262;
+  --gre_light: #bbc0c5;
+  --drmahndigrren: #9BD300;
+  --darkorange:#FF9500;
+  --lightpink:#FFEBF4;
+  --lightgray: #808080;
+  --textgray: #BBBBBB;
+  --greeen: #43D477;
+  
+ 
+}
+
+
+.boxshado {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+}
+
+.mdc-button .mdc-button__label {
+  display: contents !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+::ng-deep .calendar-input-field .mat-mdc-form-field-infix {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 10px;
+  padding: 0 !important;
+  width: 100% !important;
+}
+::ng-deep  .calendar-input-field .mdc-text-field {
+  padding: 0 !important;
+}
+::ng-deep  .calendar-input-field {
+  width: 100% !important;
+}
+::ng-deep  .mat-mdc-text-field-wrapper {
+  width: 100% !important;
+}
+::ng-deep  .form-field {
+  width: 100% !important;
+}
+.mat-card, .mdc-card {
+  background-color: var(--white) !important;
+}
+.mat-mdc-header-row th{
+
+  color: white !important;
+    }

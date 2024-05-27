@@ -1,0 +1,185 @@
+<div class="header">
+    <!-- style="height: 100vh" -->
+    <mat-toolbar class="pos_rel">
+        <mat-toolbar-row class="boxshado">
+            <div class="flex align_center height-full flex-wrap gap4">
+                <div class=" flex gap3">
+                    <img src="assets/images/Logo.png" alt="" class="logo-img">
+                    <button mat-icon-button (click)="toggleSideNav()" class="example-icon menu-icon"
+                        aria-label="Example icon-button with menu icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20">
+                            <path fill="#0163d2"
+                                d="M16.4 9H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1m0 4H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1M3.6 7h12.8c.552 0 .6-.447.6-1c0-.553-.048-1-.6-1H3.6c-.552 0-.6.447-.6 1c0 .553.048 1 .6 1" />
+                        </svg>
+                    </button>
+                    <div>
+
+                        <button mat-flat-button [matMenuTriggerFor]="menu" class="catnav">
+                            <div>Categories</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m11.808 14.77l-3.715-4.458A.8.8 0 0 1 8.708 9h6.584a.8.8 0 0 1 .614 1.312l-3.714 4.458a.25.25 0 0 1-.384 0" />
+                            </svg>
+                            <!-- <i class="fa-solid fa-caret-down icon"></i> -->
+                        </button>
+
+                        <mat-menu #menu="matMenu" class="bor_menu">
+                            <button mat-menu-item [matMenuTriggerFor]="menu1" class="dev_btn">
+                                <mat-icon class="dev_btn_1">code</mat-icon>Development
+                            </button>
+                            <hr class="m0" />
+                            <!-- inner dropdown develover start -->
+                            <mat-menu #menu1="matMenu">
+                                <a routerLink="/webdev" class="ankr">
+                                    <button mat-menu-item class="dev_btn">
+                                        <mat-icon class="dev_btn_1">laptop</mat-icon>
+                                        <span>Web Development</span>
+                                    </button>
+                                </a>
+                                <hr class="m0" />
+                                <a routerLink="/mobiledev" class="ankr">
+                                    <button mat-menu-item class="dev_btn">
+                                        <mat-icon class="dev_btn_1">phone_android</mat-icon>
+                                        <span>Mobile Development</span>
+                                    </button>
+                                </a>
+                                <hr class="m0" />
+                                <a routerLink="/gamedev" class="ankr">
+                                    <button mat-menu-item class="dev_btn">
+                                        <mat-icon class="dev_btn_1">gamepad</mat-icon>
+                                        <span>Game Development</span>
+                                    </button>
+                                </a>
+                            </mat-menu>
+                            <!-- end -->
+                            <a routerLink="/busines" class="ankr">
+                                <button mat-menu-item [matMenuTriggerFor]="menu2" class="dev_btn">
+                                    <mat-icon class="dev_btn_1"> business</mat-icon>Business
+                                </button>
+                            </a>
+                            <hr class="m0" />
+                            <!-- inner dropdown business start -->
+                            <mat-menu #menu2="matMenu">
+                                <a routerLink="/management" class="ankr">
+                                    <button mat-menu-item class="dev_btn">
+                                        <mat-icon class="dev_btn_1">group</mat-icon>
+                                        <span>Management</span>
+                                    </button>
+                                </a>
+                                <hr class="m0" />
+                                <a routerLink="/communication" class="ankr">
+                                    <button mat-menu-item class="dev_btn">
+                                        <mat-icon class="dev_btn_1"><i class="fa-solid fa-people-arrows"></i></mat-icon>
+                                        <span>Communications</span>
+                                    </button>
+                                </a>
+                                <hr class="m0" />
+                                <a routerLink="/strategy" class="ankr">
+                                    <button mat-menu-item class="dev_btn">
+                                        <mat-icon class="dev_btn_1">accessibility_new</mat-icon>
+                                        <span>Business Strategy</span>
+                                    </button>
+                                </a>
+                            </mat-menu>
+                            <!-- end -->
+                            <a routerLink="/marketing" class="ankr">
+                                <button mat-menu-item class="dev_btn">
+                                    <mat-icon class="dev_btn_1">markunread_mailbox</mat-icon>Marketing
+                                </button></a>
+                            <hr class="m0" />
+
+                            <button mat-menu-item [matMenuTriggerFor]="menu3" class="dev_btn">
+                                <mat-icon class="dev_btn_1"> local_florist</mat-icon>Lifestyle
+                            </button>
+                            <hr class="m0" />
+                            <!-- dropdown lifestyle -->
+                            <mat-menu #menu3="matMenu">
+                                <a routerLink="/lifestyle" class="ankr">
+                                    <button mat-menu-item class="dev_btn">
+                                        <mat-icon class="dev_btn_1"> local_florist</mat-icon>
+                                        <span>Lifestyle</span>
+                                    </button>
+                                </a>
+                                <hr class="m0" />
+                                <a routerLink="/beauty" class="ankr">
+                                    <button mat-menu-item class="dev_btn">
+                                        <mat-icon class="dev_btn_1">brush</mat-icon>
+                                        <span>Beauty & Makeup</span>
+                                    </button>
+                                </a>
+                            </mat-menu>
+                            <!-- dropdown lifestyle end -->
+                            <a routerLink="/health" class="ankr">
+                                <button mat-menu-item class="dev_btn">
+                                    <mat-icon class="dev_btn_1">
+                                        <i class="fa-solid fa-person-dots-from-line"></i> </mat-icon>Health & Fitness
+                                </button></a>
+                            <hr class="m0" />
+                            <a routerLink="/academics" class="ankr">
+                                <button mat-menu-item [matMenuTriggerFor]="menu4" class="dev_btn">
+                                    <mat-icon class="dev_btn_1">school</mat-icon>Academics
+                                </button>
+                            </a>
+                            <hr class="m0" />
+                            <mat-menu #menu4="matMenu">
+                                <a routerLink="/math" class="ankr">
+                                    <button mat-menu-item class="dev_btn">
+                                        <mat-icon class="dev_btn_1"> local_florist</mat-icon>
+                                        <span>Math</span>
+                                    </button>
+                                </a>
+                                <hr class="m0" />
+                                <a routerLink="/science" class="ankr">
+                                    <button mat-menu-item class="dev_btn">
+                                        <mat-icon class="dev_btn_1">
+                                            <i class="fa-solid fa-flask"></i></mat-icon>
+                                        <span>Science</span>
+                                    </button>
+                                </a>
+                                <hr class="m0" />
+                                <a routerLink="/language" class="ankr">
+                                    <button mat-menu-item class="dev_btn">
+                                        <mat-icon class="dev_btn_1">g_translate</mat-icon>
+                                        <span>Language</span>
+                                    </button>
+                                </a>
+                            </mat-menu>
+                            <a routerLink="/design" class="ankr">
+                                <button mat-menu-item class="dev_btn">
+                                    <mat-icon class="dev_btn_1">laptop_mac</mat-icon>Design
+                                </button></a>
+                        </mat-menu>
+                    </div>
+                </div>
+                <!-- Hide -->
+                <!-- <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+                <mat-icon>menu</mat-icon>
+            </button> -->
+
+                <div fxShow="true" fxHide.lt-md="true" class="flex flex-wrap flexauto gap justify-between align_center">
+                    <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+
+                    <!-- Hide -->
+                    <!-- <button class="diplycont" (click)="searchtoggle()">
+                    <mat-icon matPrefix class="line_hight">search</mat-icon>
+                </button> -->
+                    <!-- <span class="example-spacer"></span> -->
+                    <div class="course-btn-div pj-btn-div">
+                        <a routerLink="/course" mat-button class="cours_btn"> Home </a>
+                        <a routerLink="/course" mat-button class="cours_btn"> Courses </a>
+                        <a href="#" mat-button class="cours_btn" routerLink="/app-instructor"> Instructors </a>
+                        <a routerLink="/course" mat-button class="cours_btn"> Store </a>
+                        <a routerLink="/course" mat-button class="cours_btn"> Forms </a>
+                    </div>
+                    <div class="icon-div">
+                        <mat-icon class="cltex_shop">shopping_cart</mat-icon>
+                        <mat-icon class="cltex_shop">account_circle</mat-icon>
+                    </div>
+                </div>
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <!-- responsive sidebar start -->
+
+    <!-- responsive sidebar end -->
+</div>

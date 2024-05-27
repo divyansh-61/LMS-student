@@ -1,0 +1,100 @@
+<div class="main-summary">
+    <div class="charge">
+        <span>Financial summary</span>
+    </div>
+    <!-- sub hedaing  -->
+    <div class="sub-heading-div">
+        <p class="sub-heading">Financial documents</p>
+        <div class="arrow-line-div">
+            <i class="fa-solid fa-caret-right"></i>
+            <p class="arrow-line"></p>
+        </div>
+    </div>
+    <!-- sub hedaing close -->
+
+
+    <!-- table start -->
+    <div class="quizzer-table-div">
+
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+            <!-- Quiz Column -->
+            <ng-container matColumnDef="Title">
+                <th mat-header-cell *matHeaderCellDef> Title </th>
+                <td mat-cell *matCellDef="let element" class="reg-12">
+                    <div class="td-text-div">
+                        <p class="td-text-p1"> {{element.Title.text}}</p>
+                        <p class="td-text-p2"> {{element.Title.Text}}</p>
+                    </div>
+                </td>
+            </ng-container>
+
+            <!--Description Column -->
+            <ng-container matColumnDef="Description">
+                <th mat-header-cell *matHeaderCellDef> Description </th>
+                <td mat-cell *matCellDef="let element" class="reg-12"> {{element.Description}} </td>
+            </ng-container>
+
+            <!--Amount Column -->
+            <ng-container matColumnDef="Amount">
+                <th mat-header-cell *matHeaderCellDef>Amount ($) </th>
+
+                <td mat-cell *matCellDef="let element" class="reg-12">
+                    <div [ngClass]="element.Amount == '-33' ? 'quizzer-text-red' : 'quizzer-text-green' ">
+                        {{element.Amount}}
+                    </div>
+                </td>
+
+            </ng-container>
+
+            <!-- creator Column -->
+            <ng-container matColumnDef="creator">
+                <th mat-header-cell *matHeaderCellDef> Creater </th>
+                <td mat-cell *matCellDef="let element" class="reg-12">
+
+
+                    <p>{{element.creator.text}} </p>
+                    <!-- <p class="td-text-p2">{{element.creator.Text}} </p> -->
+
+
+                </td>
+            </ng-container>
+
+            <!-- Date Column -->
+            <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef>Payment Date </th>
+                <td mat-cell *matCellDef="let element" class="reg-12">
+                    <div class="quizzer-date-td">
+                        <span> {{element.date}}</span>
+
+                    </div>
+
+                </td>
+            </ng-container>
+
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+    </div>
+
+    <!-- slider button -->
+    <div class="button-slider">
+        <div class="btn-div">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" bt-icon" width="2em" height="2em" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m14 7l-5 5m0 0l5 5" />
+            </svg>
+            <button class="btn-slider">1</button>
+            <button class="btn-slider">2</button>
+            <button class="btn-slider">3</button>
+            <svg xmlns="http://www.w3.org/2000/svg" class=" bt-icon" width="2em" height="2em" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m10 17l5-5m0 0l-5-5" />
+            </svg>
+        </div>
+    </div>
+</div>

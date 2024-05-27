@@ -1,0 +1,82 @@
+<div class="main-new-topic">
+
+    <!-- main heading start -->
+    <div class="main-header">
+        <p class="new-topic-heading">New Topic</p>
+        <p class="new-topic-contant">Create new topics and communicate with other users</p>
+    </div>
+    <!-- main heading end -->
+    <!-- form filed start -->
+
+    <div class="form-div">
+
+        <!-- <div class="form-row"> -->
+
+        <div class="in-form-row">
+            <mat-label class="form-input-label">Topic Title </mat-label><br />
+            <mat-form-field appearance="outline" class="form-field">
+                <input matInput class="input">
+
+            </mat-form-field>
+        </div>
+
+        <div class="in-form-row">
+            <mat-label class="form-input-label">Forums</mat-label><br />
+
+
+            <mat-form-field appearance="outline" class="form-field">
+                <input matInput class="input">
+            </mat-form-field>
+        </div>
+
+
+        <div class="in-form-row-2">
+            <mat-label class="form-input-label">Description</mat-label><br />
+
+
+            <!-- <mat-form-field appearance="outline" class="form-field"> -->
+                <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor>
+            <!-- </mat-form-field> -->
+        </div>
+
+        <!-- <div class="form-row"> -->
+
+        <div class="in-form-row">
+            <mat-label class="form-input-label">Attachments </mat-label><br />
+
+            <div class="calendar-input-field">
+
+                <mat-form-field appearance="outline" class="form-field">
+
+                    <label for="accessibility" class="upload-image-div">
+                        <img src="assets/setting/upload_2.png" alt="">
+                    </label>
+
+                    <input matInput class="input">
+                    <p class="input-sign">+</p>
+
+                </mat-form-field>
+
+            </div>
+
+
+            <!-- </div> -->
+        </div>
+
+
+        <!-- </div> -->
+
+    </div>
+    <!-- form filed end -->
+
+
+
+
+    <div class="terms-btn-div">
+        <div>
+            <p class="terms-heading">Terms and rules confirmation</p>
+            <p class="terms-content">By posting a forum topic, you will accept community terms and rules.</p>
+        </div>
+        <button mat-raised-button>Publish topic</button>
+    </div>
+</div>

@@ -1,0 +1,256 @@
+.main-div {
+    margin: 20px;
+    overflow-x: hidden
+}
+
+/* ------------------------------------heading css-------------------- */
+
+.heading-tag {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.hr-line {
+    width: 160px;
+    margin: 0px;
+    border: 1px solid var(--primary-color);
+}
+
+/* ------------------------------------heading css-------------------- */
+
+/* ------------------------------------arrow-------------------- */
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-weight: 600;
+    /* margin-top: 20px; */
+}
+
+.aroowline {
+    font-size: 10px;
+    color: var(--lighpink);
+}
+
+.arrow-line-div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+/* ------------------------------------arrow-------------------- */
+.input-card-parent {
+    padding: 10px 20px;
+}
+
+.label-text {
+    font-size: 16px;
+}
+
+.input-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.input-head-text {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.card-container {
+    width: 100% !important;
+}
+
+.card-container-2 {
+    width: 100% !important;
+}
+
+
+
+.select_in-new {
+    height: 100px !important;
+}
+
+.filebtn {
+    width: 35% !important;
+}
+
+.form-input-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.calendar-input-field {
+    display: flex;
+    height: fit-content !important;
+    width: 100% !important;
+}
+
+.in-form-row {
+    width: 35%;
+    border: 2px solid var(--grey);
+    position: relative;
+}
+
+/* .linkfile {
+    background-color: var(--blue) !important;
+    font-size: 23px;
+    color: var(--white);
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+} */
+
+.form-field {
+
+    height: fit-content;
+    border: var(--grey);
+}
+
+.form-row {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.calendar-img {
+    background-color: var(--blue);
+    width: 40px;
+
+}
+
+.input-and-button-div {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.search-batn {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    /* margin-left: 20px; */
+    padding: 23px 20px 23px 20px !important;
+}
+
+
+@media screen and (min-width: 640px) {
+    .input-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: nowrap;
+    }
+}
+
+::ng-deep .calendar-input-field .mat-mdc-form-field-infix {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+::ng-deep .calendar-input-field .mdc-text-field {
+    padding: 0 !important;
+}
+
+::ng-deep .calendar-input-field {
+    width: 100% !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    width: 100% !important;
+}
+
+::ng-deep .form-field {
+    width: 100% !important;
+}
+
+.mat-card,
+.mdc-card {
+    background-color: var(--white) !important;
+}
+
+.btn-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2rem;
+}
+
+@media (max-width:790px) {
+    .btn-input {
+        flex-direction: column;
+        justify-content: start;
+        gap: 2rem;
+    }
+
+    .upload-input-div {
+        width: 100% !important;
+    }
+}
+
+.linkfile {
+    background-color: var(--blue);
+    padding: 10px 20px;
+    margin: 0px !important;
+    color: white !important;
+    border-radius: 4px;
+}
+
+.in-form-row-file-2 {
+    width: 90%;
+    max-height: fit-content;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.label-radio-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 3px; */
+}
+
+.upload-input-div {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 40%;
+    border: 1px solid var(--black);
+}
+
+.upload-image-div {
+    background-color: var(--blue);
+    min-width: fit-content;
+    padding: 12px 15px;
+}
+
+.upload-input-div label {
+    margin: 0px;
+}
+
+.main-container-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

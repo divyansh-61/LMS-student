@@ -1,0 +1,139 @@
+.main-div {
+    margin: 15px;
+}
+
+/* ------------------------------------heading css-------------------- */
+
+.heading-tag {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hr-line {
+    width: 80px;
+    border: 1px solid var(--primary-color);
+}
+
+/* ------------------------------------heading css-------------------- */
+
+/* ------------------------------------arrow-------------------- */
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.aroowline {
+    /* position: absolute; */
+    /* top: 5px;
+    left: 56px; */
+    font-size: 10px;
+    color: var(--lighpink);
+    width: fit-content !important;
+}
+
+.arrow-line-div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sub-heading {
+    font-size: 20px;
+    font-weight: 500;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+/* ------------------------------------arrow-------------------- */
+.btn-text{
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+    padding: 10px ;
+    margin-top: 10px;
+}
+.tags-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 15px;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    padding: 5px 12px;
+    margin: 3px;
+}
+
+@media screen and (min-width: 800px) {
+    .tag {
+        font-size: 20px;
+        color: var(--blue);
+        border: 2px solid var(--blue);
+        border-radius: 5px;
+        padding: 8px 16px;
+        margin: 8px;
+    }
+
+}
+
+.Biography-text {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey-sec);
+}
+
+.btn-class {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+    padding: 10px;
+}
+
+.btnsss-1 {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    margin: 10px;
+    padding: 20px 30px 20px 30px;
+}
+
+.btnsss-2 {
+    background-color: var(--primary-color) !important;
+    color: var(--white) !important;
+    padding: 20px 40px 20px 40px;
+
+}
+
+.btnsss-3 {
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    margin: 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+@media screen and (min-width: 370px) {
+    .btnsss-3 {
+        background-color: var(--red) !important;
+        color: var(--white) !important;
+        margin: 10px;
+        padding: 20px 40px 20px 40px;
+    }
+
+}
+
+.btnsss-4 {
+    background-color: var(--lightgreen) !important;
+    color: var(--white) !important;
+    padding: 20px 30px 20px 30px;
+}

@@ -1,0 +1,82 @@
+.upperpart{
+    padding: 20px;
+}
+.parapart{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+}
+.parapart p{
+   font-weight: bold;
+   font-size: 20px;
+   margin-top: 4px;
+}
+.doyoupart span{
+   color: grey;
+   font-size: 16px;
+}
+.buttondiv{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   padding-block: 15px;
+}
+
+
+.btn1{
+   background-color: var(--red) !important;
+   color: white !important;
+   padding: 10px 20px;
+   border: none;
+}
+
+.btn2{
+   background-color: var(--grey-sec) !important;
+   color: white !important;
+   padding: 10px 20px;
+   border: none;
+}
+.upperpart{
+   background-color: rgba(255, 145, 169, 0.2);
+   padding-block: 30px;
+}
+.parapart{
+       padding-block: 10px;
+       padding-bottom: 30px;
+}
+.buttondiv{
+   background-color: rgba(187, 187, 187, 0.2);
+   font-size: 14px;
+
+}
+
+.spandiv{
+    display: flex;
+    justify-content: center;
+}
+.deletespan{
+ 
+ font-size: 20px;
+ font-weight: 600;
+}
+/* popup border radius notes ngdeep used */
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface{
+   border-radius: 20px !important;
+}
+/* popup responsive media queries */
+@media (min-width:320px) and (max-width:900px) {
+  ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface{
+       width: inherit !important
+   }
+   .parapart p{
+       text-align: center;
+       padding-inline: 30px;
+   }
+
+   
+
+
+}

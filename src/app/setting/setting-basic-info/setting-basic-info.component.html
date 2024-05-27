@@ -1,0 +1,214 @@
+<!-- Result Statistics -->
+<div class="result-statistics-div">
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p>Basic Information</p>
+
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line "></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-div">
+
+        <div class="form-row">
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Email </mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" type="email" placeholder="student@demo.com">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Name</mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <input matInput class="input" placeholder="Cameron Schofield">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="form-row">
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Password </mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="input" type="password">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Retype Password</mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <input matInput class="input" type="password">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="form-row">
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Phone</mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <input matInput class="input" type="number">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Language</mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" [(value)]="selected1">
+                            <mat-option value="Hindi">Hindi</mat-option>
+                            <mat-option value="green">English</mat-option>
+                            <mat-option value="blue">Blue</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Time Zone</mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" [(value)]="selected2">
+                            <mat-option value="America/New_York">America/New_York</mat-option>
+                            <mat-option value="green">Green</mat-option>
+                            <mat-option value="blue">Blue</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Currency</mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" [(value)]="selected3">
+                            <mat-option value="United States Dollar ($)">United States Dollar ($)</mat-option>
+                            <mat-option value="green">Green</mat-option>
+                            <mat-option value="blue">Blue</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- <div class="form-row"> -->
+        <!-- My quizzes -->
+        <div class="togles-parent">
+            <div class="result-statistics-div-1">
+                <div class="result-statistics">
+                    <div class="my-quizzer-heading-div-1">
+                        <p>Join email newsletter</p>
+
+                        <div class="quizzers-arrow-line-div">
+                            <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                            <p class="quizzers-pink-line m0"></p>
+
+                        </div>
+                        <div class="text-with-toggle-div">
+
+                            <mat-slide-toggle checked=""></mat-slide-toggle>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+            <!-- My quizzes -->
+            <div class="result-statistics-div-1">
+                <div class="result-statistics">
+                    <div class="my-quizzer-heading-div-1">
+                        <p>Enable profile messages</p>
+
+                        <div class="quizzers-arrow-line-div">
+                            <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                            <p class="quizzers-pink-line m0"></p>
+                        </div>
+                    </div>
+
+                    <div class="text-with-toggle-div">
+
+                        <mat-slide-toggle></mat-slide-toggle>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- buttons div  -->
+    <!-- <div class="btn-class">
+        <div>
+            <button mat-raised-button class="btnsss-1">Previous</button>
+            <button mat-raised-button class="btnsss-2">Next</button>
+        </div>
+        <div>
+            <button mat-raised-button class="btnsss-3" (click)="delete()">Delete Account</button>
+            <button mat-raised-button class="btnsss-4">Save</button>
+        </div>
+    </div> -->
+    <!-- buttons div close -->
+</div>

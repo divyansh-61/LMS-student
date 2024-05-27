@@ -1,0 +1,79 @@
+.btn_pal {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 20px;
+  padding: 20px;
+}
+.main_second_accord {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+}
+.type_text {
+  color: var(--blue);
+  position: relative;
+  margin: 20px 0;
+  font-size: 30px;
+  letter-spacing: 0px;
+  font-weight: 700;
+}
+.type_text::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 35%;
+  /* width: 100%; */
+  height: 2px;
+  background-color: var(--blue);
+}
+.start_tn_div {
+  display: flex !important;
+  justify-content: end !important;
+}
+.play_btn {
+  background-color: var(--grey);
+
+  color: var(--white);
+  font-size: 20px;
+  margin: 15px 0px;
+}
+.inr_text {
+  font-size: 20px;
+  margin: 0px;
+}
+.fon_lorem {
+  font-size: 16px;
+}
+.righ_rat {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 16px;
+  align-items: center;
+}
+.main_icn_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+  color: var(--grey-sec);
+}
+@media screen and (max-width: 992px) {
+  .main_icn_flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .inr_text {
+    font-size: 15px;
+    margin: 0px;
+  }
+  .type_text {
+    font-size: 23px;
+  }
+  .main_icn_flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

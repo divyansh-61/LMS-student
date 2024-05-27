@@ -1,0 +1,139 @@
+<p class="my-result-heading">Organization Courses</p>
+
+
+<!-- Result Statistics -->
+<div class="result-statistics-div">
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p>Filter courses</p>
+
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line "></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="form-div">
+
+        <div class="form-row">
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">From </mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <img src="../../assets/Quizzes/Group 340247.png" alt="" class="calendar-img">
+
+                        <input matInput class="input">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">To</mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <img src="../../assets/Quizzes/Group 340247.png" alt="" class="calendar-img">
+
+                        <input matInput class="input">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="form-row">
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label"> Course type </mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in">
+                            <mat-option value="red">Red</mat-option>
+                            <mat-option value="green">Green</mat-option>
+                            <mat-option value="blue">Blue</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Sort by </mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in">
+                            <mat-option value="red">Red</mat-option>
+                            <mat-option value="green">Green</mat-option>
+                            <mat-option value="blue">Blue</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- <div class="form-row"> -->
+
+
+        <div class="in-form-row button-div">
+            <button mat-raised-button class="show-result-button">Show Results</button>
+        </div>
+
+        <!-- </div> -->
+
+    </div>
+
+</div>
+
+<!-- My quizzes -->
+<div class="result-statistics-div">
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p>Organization courses</p>
+
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+
+        <div class="text-with-toggle-div">
+            <p>Only free courses</p>
+            <mat-slide-toggle checked="" routerLink="/course/organization"></mat-slide-toggle>
+        </div>
+
+    </div>
+
+
+    <!-- mat card -->
+
+    <mat-card class="outer-instructor">
+        <!-- <i class="fa-regular fa-circle-down text-xl text-end p-4 "></i> -->
+        <mat-card-content class="inner-instructor  ">
+            <img src="assets/course-org/togle-free.png" alt="" class="img-course">
+            <p class="heading-content-instructor">
+                No Favorite Course! </p>
+            <p class="content-instructor">
+                You can add a course to your favorites and enroll on later.</p>
+
+
+
+        </mat-card-content>
+    </mat-card>

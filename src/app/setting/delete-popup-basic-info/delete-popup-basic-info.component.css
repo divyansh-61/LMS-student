@@ -1,0 +1,88 @@
+.upperpart{
+    padding: 20px;
+}
+.parapart{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:4px;
+   
+}
+.parapart .sure{
+   font-weight: bold;
+   font-size: 30px;
+   margin-top: 4px;
+}
+.doyoupart span{
+   color: grey;
+   font-size: 16px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.buttondiv{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   padding-block: 15px;
+}
+
+
+.btn1{
+   background-color: var(--lightgreen) !important;
+   color: white !important;
+   border: none;
+   padding: 10px 20px ;
+}
+
+.btn2{
+   background-color: var(--red) !important;
+   color: white !important;
+   border: none;
+   padding: 10px 20px ;
+}
+.upperpart{
+   background-color: rgba(255, 145, 169, 0.2);
+   padding-block: 30px;
+}
+.parapart{
+       padding-block: 10px;
+       padding-bottom: 30px;
+}
+.buttondiv{
+   background-color: rgba(187, 187, 187, 0.2);
+   font-size: 14px;
+
+}
+
+.spandiv{
+    display: flex;
+    justify-content: center;
+}
+.sure2{
+    font-size: 16px;
+    color:var(--grey-sec);
+    text-align: center;
+}
+
+/* popup border radius notes ngdeep used */
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface{
+   border-radius: 20px !important;
+}
+/* popup responsive media queries */
+@media (min-width:320px) and (max-width:900px) {
+  ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface{
+       width: inherit !important
+   }
+   .parapart p{
+       text-align: center;
+       padding-inline: 30px;
+   }
+
+   
+
+
+}

@@ -1,0 +1,168 @@
+.type_text {
+    color: var(--blue);
+    position: relative;
+    margin: 20px 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .type_text::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 25%;
+    /* width: 100%; */
+    height: 2px;
+    background-color: var(--blue);
+  }
+  .text_info {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .content-info{
+  font-size: 16px;
+  }
+  .grid_div {
+    display: grid;
+  }
+  .star_div {
+    color: var(--yellow);
+    margin-right: 5px;
+  }
+  .ormt1 {
+    margin-top: 0px;
+    min-width: 35%;
+    /* max-width: 50%; */
+  }
+  .excel_para {
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 20px;
+    /* padding: 10px; */
+  }
+  .notgrid {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+  }
+  .list_1 {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .h_lin {
+    line-height: 1.6;
+  }
+  .absolut_3 {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    background-color: var( --darkbl);
+    padding: 6px 18px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: var(--white);
+  }
+  .star-flex{
+    display: flex;
+    gap:6px;
+  }
+  .hours{
+    margin-top: 8px;
+  }
+  .gren_div {
+    padding: 1px 3px;
+    width: fit-content;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+  }
+  .numb2 {
+    width: fit-content;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 2px 12px;
+    border-radius: 5px;
+    text-align: left !important;
+    /* margin-top: 20px !important; */
+  }
+  .iner_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--black);
+    position: relative;
+    /* gap: 50px; */
+  }
+  .mt_0 {
+    margin-top: 0px;
+  }
+  .card_he {
+    margin: 40px 0px;
+  }
+  .w_100_div {
+    width: 100%;
+  }
+  .FAQ_text {
+    color: var(--blue);
+    position: relative;
+    margin: 20px 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .bg-card{
+    background-color:var( --lightgr) ;
+  }
+  .FAQ_text::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 8%;
+    /* width: 100%; */
+    height: 2px;
+    background-color: var(--blue);
+  }
+  .accord_text {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+   
+  }
+  .my_margin {
+    margin: 20px 0px !important;
+    padding: 20px 0px !important;
+  }
+  .post_btn {
+    margin-top: 70px;
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  .flex_repl_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ma_div {
+    margin: 20px;
+  }
+  .mai_card_res {
+    padding: 20px;
+    margin: 20px 0px;
+  }
+  .rot_text {
+    font-weight: 700;
+    color: var(--black);
+    margin: 0px;
+  }
+  .stud_text {
+    font-size: 13px;
+    margin: 0px;
+  }
+  
+  @media screen and (max-width: 1204px) {
+    .notgrid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  

@@ -1,0 +1,429 @@
+.main_page {
+  margin: 10px;
+}
+
+.Dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.Dashboard-header span {
+  border-bottom: 2px solid;
+  border-color: var(--primary-color);
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.Ransdell-main {
+  border-radius: 10px;
+  padding: 10px;
+  background: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /* Position relative to act as a reference for absolute positioning */
+}
+
+.Ransdell {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0px;
+
+  button {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 2px 10px;
+  }
+
+  .events {
+    font-size: 15px;
+  }
+}
+
+.Ransdell-1 {
+  color: var(--blue);
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.Ransdell-image img {
+  position: absolute;
+  top: -32px;
+  right: 0px;
+  width: 225px;
+}
+
+/* card  */
+.cards-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.example-card {
+  max-width: 400px;
+  width: 300px;
+}
+
+.blnc-img img {
+  display: flex;
+  justify-content: center !important;
+}
+
+.mat-mdc-card-header {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+.mat-mdc-card .mat-mdc-card-content {
+  padding: 2px 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mat-mdc-card .mat-mdc-card-actions {
+  margin: 0px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards-main {
+  display: flex;
+}
+
+.full-height {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.cards-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.example-card {
+  width: calc(90% - 5px);
+}
+
+.rightsodediv {
+  padding: 0px 10px;
+  display: flex !important;
+  /* justify-content: space-around; */
+  align-items: center;
+  gap: 20px;
+  flex-direction: row !important;
+  width: 300px;
+  max-width: 400px !important;
+
+  img {
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+  }
+
+  .Pending-meetings {
+    font-size: 15px !important;
+    color: black;
+  }
+}
+
+.blnc-img img {
+  /* width: 100%; */
+}
+
+/* card  */
+
+/* ghrapj section */
+.ghra_section {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 30px 0px;
+  text-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.main_ghraph_cart {
+  padding: 5px;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+  border-radius: 10px;
+}
+
+.top_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mont_text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.canvas {
+  height: 300px !important;
+}
+
+.active_text {
+  font-size: 20px;
+  margin: 0px;
+  color: var(--gr_lig);
+  text-align: end;
+}
+
+.active_div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.heading_dash {
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--primary-color);
+  width: fit-content;
+}
+
+.cam_main_dv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 35px 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+  position: relative;
+  margin-top: 80px;
+}
+
+.img_ab {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+}
+
+.ha_text {
+  font-size: 20px;
+  margin: 0px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.hi_text {
+  font-size: 30px;
+  margin: 0px;
+  color: var(--blue);
+  letter-spacing: 0px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.view_btn {
+  letter-spacing: 0px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  height: 45px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.charg_div {
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+}
+
+.main_charg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0px;
+  gap: 30px;
+}
+
+.accou_text {
+  font-size: 14px;
+  color: var(--gr_lig);
+  margin: 20px 0px;
+  font-weight: 600;
+}
+
+.ru_text {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.chqar_text {
+  font-size: 20px;
+
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+.right_div {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  width: 70%;
+}
+
+.first_div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inner_div {
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+  border-radius: 10px;
+  padding: 17px 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ten_text {
+  font-size: 36px;
+  font-family: 700;
+  margin: 0px;
+}
+
+.main_last {
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+  border-radius: 10px;
+  padding: 20px 0px;
+}
+
+.control-section {
+  min-height: 450px;
+}
+
+.not_text {
+  font-size: 16px;
+  font-weight: 900;
+  padding: 20px 20px;
+  border-bottom: 3px solid var(--gre_light);
+}
+
+.new_div {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.new_text {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.cret_text {
+  font-size: 12px;
+  color: var(--gr_lig);
+  margin: 0px;
+  margin-top: 6px;
+}
+
+.more_btn {
+  border-radius: 20px;
+  border: 1px solid var(--textcolor);
+  font-size: 14px;
+  padding: 0px 10px;
+}
+
+/* ----------------Breakpoints---------------- */
+
+@media screen and (max-width: 959px) {
+  .Ransdell-main {
+    padding: 10px;
+    background: #ffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .Ransdell-image {
+    position: relative;
+    /* Set back to relative positioning */
+    width: 100%;
+    margin-top: 20px;
+    /* Add margin-top for spacing */
+  }
+
+  .Ransdell-image img {
+    width: 600px;
+    height: auto;
+  }
+
+  .Ransdell-image {
+    visibility: hidden;
+  }
+
+  .ghra_section {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* Center items horizontally */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Ransdell-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .Ransdell-image img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 225px;
+  }
+}
+
+/* ----------------Breakpoints---------------- */
+/* .main_page div .main_ghraph_cart{
+  display: none;
+} */
+/* div .main_ghraph_cart:nth-child(2) {
+  display: none !important;
+} */
+
+
+.example-button-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem !important;
+}
+
+.yes_btn{
+  text-wrap: nowrap;
+}
